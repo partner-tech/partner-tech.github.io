@@ -6,23 +6,22 @@
     <title>partner-tech.github.io</title>
 </head>
 <body>
-    <h1>teste</h1>
+    <h1>Teste - Callback</h1>
     <div id="aqui"></div>
-    <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://partnertech.commercesuite.com.br">partner-tech.github.io</a><br />
-    <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://partnertech.commercesuite.com.br"></a><br />
-    <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://partnertech.commercesuite.com.br" /><br />
     <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://partnertech.commercesuite.com.br">https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://partnertech.commercesuite.com.br</a><br />
     <script>
         const aqui = document.getElementById('aqui');
+
         const urlParams = new URLSearchParams(window.location.search);
+
         let query = '';
         
-        for (const [key, value] of urlParams.entries()) {
+        for (const [key, value] of urlParams.entries())
+        {
             query += `${key}=${value}<br />`;
         }
         
-        aqui.innerHTML = query;
-        
+        aqui.innerHTML = query;        
     </script>
 </body>
 </html>
