@@ -2,26 +2,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>partner-tech.github.io</title>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>callback</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste - Callback</h1>
-    <div id="aqui"></div>
-    <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://www.google.com">Instalar</a><br />
-    <script>
-        const aqui = document.getElementById('aqui');
-
-        const urlParams = new URLSearchParams(window.location.search);
-
-        let query = '';
-        
-        for (const [key, value] of urlParams.entries())
-        {
-            query += `${key}=${value}<br />`;
-        }
-        
-        aqui.innerHTML = query;        
-    </script>
+    <h1>callback</h1>
+    <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://www.google.com">instalar</a>
 </body>
 </html>
