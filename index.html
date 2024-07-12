@@ -13,5 +13,21 @@
 <body>
     <h1>callback</h1>
     <a href="https://loja-s.tray.com.br/auth.php?response_type=code&consumer_key=636113d7eb2056b3c83d8446730c974e1f0b114099373970a3060deb167d1020&callback=https://partner-tech.github.io">instalar</a>
+    <hr />
+    <div id="aqui"></div>
+    <script>
+        const aqui = document.getElementById('aqui');
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        let query = '';
+
+        for (const [key, value] of urlParams.entries())
+        {
+            query += `${key}=${value}<br />`;
+        }
+
+        aqui.innerHTML = query;        
+    </script>
 </body>
 </html>
